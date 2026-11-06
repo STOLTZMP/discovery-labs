@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discovery Labs</title>
+<meta name="description" content="Two free learning labs for chemistry and physics: rediscover famous experiments from the evidence, play with simulations, and practice on real-world problems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Old+Standard+TT:wght@400;700&display=swap">
+<style>
+  :root { --paper: #F4F6F1; --surface: #FFFFFF; --ink: #17211D; --ink-2: #4C5C55; --rule: #CCD6CE; --brass: #A87418; --chem: #2E6B57; --phys: #5B3F8C; }
+  @media (prefers-color-scheme: dark) { :root { --paper: #0D1412; --surface: #16201D; --ink: #E2ECE6; --ink-2: #9DB1A9; --rule: #283833; --brass: #E2AF57; --chem: #6CC3A3; --phys: #B9A2EA; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.55 "Atkinson Hyperlegible", system-ui, sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-family: "Old Standard TT", Georgia, serif; font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.1; margin: 0 0 .6rem; }
+  .lede { color: var(--ink-2); max-width: 62ch; margin: 0 0 2rem; }
+  .labs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 1.2rem; }
+  .lab { display: grid; gap: .45rem; align-content: start; text-decoration: none; color: var(--ink); background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 1.4rem 1.4rem 1.2rem; border-top: 6px solid var(--chem); }
+  .lab:nth-child(2) { border-top-color: var(--phys); }
+  .lab:hover, .lab:focus-visible { outline: 3px solid var(--brass); outline-offset: 3px; }
+  .mark { font-family: "Old Standard TT", Georgia, serif; font-size: 1.6rem; width: 2.6rem; height: 2.6rem; display: grid; place-items: center; border-radius: 50%; border: 2px solid var(--brass); color: var(--brass); }
+  .subject { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
+  .title { font-family: "Old Standard TT", Georgia, serif; font-size: 1.7rem; font-weight: 700; }
+  .blurb { color: var(--ink-2); }
+  .go { font-weight: 700; color: var(--brass); margin-top: .3rem; }
+  footer { margin-top: 2.5rem; color: var(--ink-2); font-size: .9rem; max-width: 70ch; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Discovery Labs</h1>
+  <p class="lede">Don’t memorize science. Discover it. Re-run the experiments that changed what we know, play with working simulations, and practice on problems taken from hospitals, rockets, race tracks and power plants.</p>
+  <div class="labs">
+      <a class="lab" href="chemistry/">
+        <span class="mark" aria-hidden="true">α</span>
+        <span class="subject">Chemistry</span>
+        <span class="title">Atomic Discovery Lab</span>
+        <span class="blurb">Re-run the experiments that revealed the atom, from Thomson’s bending beam to the nucleus, isotopes and radioactive decay. Simulations, real-world problems, X-rays and the quantum atom.</span>
+        <span class="go">Open the lab →</span>
+      </a>
+      <a class="lab" href="physics/">
+        <span class="mark" aria-hidden="true">g</span>
+        <span class="subject">Physics · Unit 1: Motion</span>
+        <span class="title">Physics Discovery Lab</span>
+        <span class="blurb">Rediscover the laws of motion from Galileo’s rolling ball, launch projectiles, slide blocks down ramps, swing pendulums, and measure gravity at home with a string and a weight.</span>
+        <span class="go">Open the lab →</span>
+      </a>
+  </div>
+  <footer>
+    <p>Your notebook and progress are saved in the browser you use, on each device separately; export them from each lab’s Notebook page to keep a copy. Every photograph is openly licensed and credited inside each lab under “Photo credits and licenses”.</p>
+  </footer>
+</main>
+</body>
+</html>
